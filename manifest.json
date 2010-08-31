@@ -1,0 +1,14 @@
+{
+   "description": "Expand short url",
+   "name": "UrlExpander",
+   "permissions": [ "http://*/", "tabs" ],
+   "background_page": "background.html",
+   "version": "1.0",
+
+   "content_scripts": [ {
+      "js": [ "jquery.js", "main.js" ],
+      "matches": [ "http://bit.ly/*" ],
+      "run_at": "document_start"
+   } ]
+
+}
