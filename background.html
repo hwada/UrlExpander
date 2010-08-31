@@ -1,11 +1,9 @@
 <html>
 <head>
 <script src="jquery.js"/>
-<!--<script src="main.js"/>-->
 <script>
 function jump(request, sender, callback) {
-  var href = encodeURI(location.href);
-  href = 'http://bit.ly/bYIWqT';
+  var href = request;
 
   var url = 'http://www.longurlplease.com/api/v1.1?callback=?';
   $.getJSON(url, { q: href }, function(data) {
